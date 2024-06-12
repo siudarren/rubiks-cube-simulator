@@ -10,7 +10,7 @@ const results = [];
 app.use(express.static('public'));
 // Serve the main page
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 // Route to access CSV data
