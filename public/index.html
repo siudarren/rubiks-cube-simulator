@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Online Cube Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quaternion.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <h1><a href="index.html">Online Cube</a></h1>
+            </li>
+            <li>
+                <a href="about.html">about</a>
+            </li>
+            <li>
+                <a href="learn.html">learn</a>
+            </li>
+            <li>
+                <a href="contact.html">contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-content">
+        <div class="rotation-buttons">
+            <h2>TURNS</h2>
+            
+            <div class="Permutations">
+                <ul>
+                    <li>
+                        <button class="basic-rotations-button">BASIC TURNS</button>
+                    </li>
+                    <li>
+                        <button class="oll-button">OLL</button>
+                    </li>
+                    <li>
+                        <button class="pll-button">PLL</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="basic-rotations">
+                <ul class="whole-cube-rotations">
+                    <li>
+                        <button id="x">x</button>
+                    </li>
+                    <li>
+                        <button id="X">x'</button>
+                    </li>
+                    <li>
+                        <button id="y">y</button>
+                    </li>
+                    <li>
+                        <button id="Y">y'</button>
+                    </li>
+                    <li>
+                        <button id="z">z</button>
+                    </li>
+                    <li>
+                        <button id="Z">z'</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <button id="f">F</button>
+                    </li>
+                    <li>
+                        <button id="F">F'</button>
+                    </li>
+                    <li>
+                        <button id="b">B</button>
+                    </li>
+                    <li>
+                        <button id="B">B'</button>
+                    </li>
+                    <li>
+                        <button id="r">R</button>
+                    </li>
+                    <li>
+                        <button id="R">R'</button>
+                    </li>
+                    <li>
+                        <button id="l">L</button>
+                    </li>
+                    <li>
+                        <button id="L">L'</button>
+                    </li>
+                    <li>
+                        <button id="u">U</button>
+                    </li>
+                    <li>
+                        <button id="U">U'</button>
+                    </li>
+                    <li>
+                        <button id="d">D</button>
+                    </li>
+                    <li>
+                        <button id="D">D'</button>
+                    </li>
+                    <li>
+                        <button id="m">M</button>
+                    </li>
+                    <li>
+                        <button id="M">M'</button>
+                    </li>
+                    <li>
+                        <button id="s">S</button>
+                    </li>
+                    <li>
+                        <button id="S">S'</button>
+                    </li>
+                    <li>
+                        <button id="e">E</button>
+                    </li>
+                    <li>
+                        <button id="E">E'</button>
+                    </li>
+                </ul>
+                <ul class="two-layer-rotations">
+                    <li>
+                        <button id="q">Rw</button>
+                    </li>
+                    <li>
+                        <button id="Q">Rw'</button>
+                    </li>
+                    <li>
+                        <button id="t">Lw</button>
+                    </li>
+                    <li>
+                        <button id="T">Lw'</button>
+                    </li>
+                    <li>
+                        <button id="o">Fw</button>
+                    </li>
+                    <li>
+                        <button id="O">Fw'</button>
+                    </li>
+                    <li>
+                        <button id="p">Uw</button>
+                    </li>
+                    <li>
+                        <button id="P">Uw'</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="oll-rotations">
+                <ul>
+                    <li>
+                        <button id="O01">01</button>
+                    </li>
+                    <li>
+                        <button id="O02">02</button>
+                    </li>
+                    <li>
+                        <button id="O03">03</button>
+                    </li>
+                    <li>
+                        <button id="O04">04</button>
+                    </li>
+                    <li>
+                        <button id="O05">05</button>
+                    </li>
+                    <li>
+                        <button id="O06">06</button>
+                    </li>
+                    <li>
+                        <button id="O07">07</button>
+                    </li>
+                    <li>
+                        <button id="O08">08</button>
+                    </li>
+                    <li>
+                        <button id="O09">09</button>
+                    </li>
+                    <li>
+                        <button id="O10">10</button>
+                    </li>
+                    <li>
+                        <button id="O11">11</button>
+                    </li>
+                    <li>
+                        <button id="O12">12</button>
+                    </li>
+                    <li>
+                        <button id="O13">13</button>
+                    </li>
+                    <li>
+                        <button id="O14">14</button>
+                    </li>
+                    <li>
+                        <button id="O15">15</button>
+                    </li>
+                    <li>
+                        <button id="O16">16</button>
+                    </li>
+                    <li>
+                        <button id="O17">17</button>
+                    </li>
+                    <li>
+                        <button id="O18">18</button>
+                    </li>
+                    <li>
+                        <button id="O19">19</button>
+                    </li>
+                    <li>
+                        <button id="O20">20</button>
+                    </li>
+                    <li>
+                        <button id="O21">21</button>
+                    </li>
+                    <li>
+                        <button id="O22">22</button>
+                    </li>
+                    <li>
+                        <button id="O23">23</button>
+                    </li>
+                    <li>
+                        <button id="O24">24</button>
+                    </li>
+                    <li>
+                        <button id="O25">25</button>
+                    </li>
+                    <li>
+                        <button id="O26">26</button>
+                    </li>
+                    <li>
+                        <button id="O27">27</button>
+                    </li>
+                    <li>
+                        <button id="O28">28</button>
+                    </li>
+                    <li>
+                        <button id="O29">29</button>
+                    </li>
+                    <li>
+                        <button id="O30">30</button>
+                    </li>
+                    <li>
+                        <button id="O31">31</button>
+                    </li>
+                    <li>
+                        <button id="O32">32</button>
+                    </li>
+                    <li>
+                        <button id="O33">33</button>
+                    </li>
+                    <li>
+                        <button id="O34">34</button>
+                    </li>
+                    <li>
+                        <button id="O35">35</button>
+                    </li>
+                    <li>
+                        <button id="O36">36</button>
+                    </li>
+                    <li>
+                        <button id="O37">37</button>
+                    </li>
+                    <li>
+                        <button id="O38">38</button>
+                    </li>
+                    <li>
+                        <button id="O39">39</button>
+                    </li>
+                    <li>
+                        <button id="O40">40</button>
+                    </li>
+                    <li>
+                        <button id="O41">41</button>
+                    </li>
+                    <li>
+                        <button id="O42">42</button>
+                    </li>
+                    <li>
+                        <button id="O43">43</button>
+                    </li>
+                    <li>
+                        <button id="O44">44</button>
+                    </li>
+                    <li>
+                        <button id="O45">45</button>
+                    </li>
+                    <li>
+                        <button id="O46">46</button>
+                    </li>
+                    <li>
+                        <button id="O47">47</button>
+                    </li>
+                    <li>
+                        <button id="O48">48</button>
+                    </li>
+                    <li>
+                        <button id="O49">49</button>
+                    </li>
+                    <li>
+                        <button id="O50">50</button>
+                    </li>
+                    <li>
+                        <button id="O51">51</button>
+                    </li>
+                    <li>
+                        <button id="O52">52</button>
+                    </li>
+                    <li>
+                        <button id="O53">53</button>
+                    </li>
+                    <li>
+                        <button id="O54">54</button>
+                    </li>
+                    <li>
+                        <button id="O55">55</button>
+                    </li>
+                    <li>
+                        <button id="O56">56</button>
+                    </li>
+                    <li>
+                        <button id="O57">57</button>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="pll-rotations">
+                <ul>
+                    <li>
+                        <button id="Aa">Aa - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Ab">Ab - Perm</button>
+                    </li>
+                    <li>
+                        <button id="E">E - Perm</button>
+                    </li>
+                    <li>
+                        <button id="F">F - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Ga">Ga - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Gb">Gb - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Gc">Gc - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Gd">Gd - Perm</button>
+                    </li>
+                    <li>
+                        <button id="H">H - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Ja">Ja - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Jb">Jb - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Na">Na - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Nb">Nb - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Ra">Ra - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Rb">Rb - Perm</button>
+                    </li>
+                    <li>
+                        <button id="T">T - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Ua">Ua - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Ub">Ub - Perm</button>
+                    </li>
+                    <li>
+                        <button id="V">V - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Y">Y - Perm</button>
+                    </li>
+                    <li>
+                        <button id="Z">Z - Perm</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cube-container">
+            <div class="cube">
+                <!-- level 1, first row -->
+                <div class="level-1 position-1 block">
+                    <div class="front side red"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-1 position-2 block">
+                    <div class="front side red"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-1 position-3 block">
+                    <div class="front side red"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side black"></div>
+                </div>
+                <!-- Level 1, second row -->
+                <div class="level-1 position-4 block">
+                    <div class="front side black"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-1 position-5 block">
+                    <div class="front side black"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-1 position-6 block">
+                    <div class="front side black"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side black"></div>
+                </div>
+                <!-- level 1, thrid row -->
+                <div class="level-1 position-7 block">
+                    <div class="front side black"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side orange"></div>
+                </div>
+                <div class="level-1 position-8 block">
+                    <div class="front side black"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side orange"></div>
+                </div>
+                <div class="level-1 position-9 block">
+                    <div class="front side black"></div>
+                    <div class="down side white"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side orange"></div>
+                </div>
+
+                <!-- level 2, first row -->
+                <div class="level-2 position-1 block">
+                    <div class="front side red"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-2 position-2 block">
+                    <div class="front side red"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-2 position-3 block">
+                    <div class="front side red"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side black"></div>
+                </div>
+                <!-- Level 2, second row -->
+                <div class="level-2 position-4 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-2 position-5 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-2 position-6 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side black"></div>
+                </div>
+                <!-- level 2, thrid row -->
+                <div class="level-2 position-7 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side orange"></div>
+                </div>
+                <div class="level-2 position-8 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side orange"></div>
+                </div>
+                <div class="level-2 position-9 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side black"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side orange"></div>
+                </div>
+                
+
+                <!-- level 3, first row -->
+                <div class="level-3 position-1 block">
+                    <div class="front side red"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-3 position-2 block">
+                    <div class="front side red"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-3 position-3 block">
+                    <div class="front side red"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side black"></div>
+                </div>
+                <!-- Level 3, second row -->
+                <div class="level-3 position-4 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-3 position-5 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side black"></div>
+                </div>
+                <div class="level-3 position-6 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side black"></div>
+                </div>
+                <!-- level 3, thrid row -->
+                <div class="level-3 position-7 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side blue"></div>
+                    <div class="right side black"></div>
+                    <div class="back side orange"></div>
+                </div>
+                <div class="level-3 position-8 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side black"></div>
+                    <div class="right side black"></div>
+                    <div class="back side orange"></div>
+                </div>
+                <div class="level-3 position-9 block">
+                    <div class="front side black"></div>
+                    <div class="down side black"></div>
+                    <div class="up side yellow"></div>
+                    <div class="left side black"></div>
+                    <div class="right side green"></div>
+                    <div class="back side orange"></div>
+                </div>
+            </div>
+        </div>
+        <div class="setting">
+            <div class="main-buttons">
+                <ul>
+                    <li>
+                        <button class="scramble-button">SCRAMBLE</button>
+                    </li>
+                    <li>
+                        <button class="solve-button">SOLVE</button>
+                    </li>
+                    <li>
+                        <button class="reset-button">RESET</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="rotation-speed">
+                <h2 class="setting-title">TURN SPEED</h2>
+                <ul>
+                    <li>
+                        <button class="fast-button">FAST</button>
+                    </li>
+                    <li>
+                        <button class="normal-button">NORMAL</button>
+                    </li>
+                    <li>
+                        <button class="slow-button">SLOW</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="rotation-method">
+                <h2 class="setting-title">ROTATE CUBE</h2>
+                <ul>
+                    <li>
+                        <button class="slide-button">SLIDE</button>
+                    </li>
+                    <li>
+                        <button class="drag-button">DRAG</button>
+                    </li>
+                    <li>
+                        <button class="rotation-reset-button">RESET</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="sliders">
+                <div class="x-axis">
+                    <p>X</p>
+                    <input type="range" name="" id="x-slide">
+                </div>
+                <div class="y-axis">
+                    <p>Y</p>
+                    <input type="range" name="" id="y-slide">
+                </div>
+                <div class="z-axis">
+                    <p>Z</p>
+                    <input type="range" name="" id="z-slide">
+                </div>
+            </div>
+            <div class="drag-instruction">
+                <p>(drag the cube to rotate it)</p>
+            </div>
+            <h2 class="setting-title">MOVE HISTORY</h2>
+            <div class="move-history">
+                
+                <p class="move-history-log"> </p>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

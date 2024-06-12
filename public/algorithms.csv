@@ -1,0 +1,79 @@
+Name,Algorithm
+Aa, x R' U R' D2 R U' R' D2 R2 x'
+Ab, x R2 D2 R U R' D2 R U' R x'
+E, R' U' R' D' R U' R' D R U R' D' R U R' D R2
+F, R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R
+Ga, R2 U R' U R' U' R U' R2 U' D R' U R U D'
+Gb, R' U' R U D' R2 U R' U R U' R U' R2 U' D
+Gc, R2 F2 R U2 R U2 R' F R U R' U' R' F R2
+Gd, R U R' U' D R2 U' R U' R' U R' U R2 U D'
+H, M2 U M2 U2 M2 U M2
+Ja, L' U2 L U L' U2 R U' L U R'
+Jb, R U R' F' R U R' U' R' F R2 U' R' U'
+Na, R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'
+Nb, R' U R U' R' F' U' F R U R' F R' F' R U' R
+Ra, R U' R' U' R U R D R' U' R D' R' U2 R' U'
+Rb, R' U2 R' D' R U' R' D R U R U' R' U' R U'
+T, R U R' U' R' F R2 U' R' U' R U R' F'
+Ua, M2 U M U2 M' U M2
+Ub, M2 U' M U2 M' U' M2
+V, R' U R' U' R D' R' D R' U D' R2 U' R2 D R2
+Y, F R U' R' U' R U R' F' R U R' U' R' F R F'
+Z, M2 U M2 U M' U2 M2 U2 M' U2
+O01, R U2 R2 F R F' U2 R' F R F'
+O02, F R U R' U' S R U R' U' Fw'
+O03, Fw R U R' U' Fw' U' F R U R' U' F'
+O04, Fw R U R' U' Fw' U F R U R' U' F'
+O05, Rw' U2 R U R' U Rw
+O06, Rw U2 R' U' R U' Rw'
+O07, Rw U R' U R U2 Rw'
+O08, Rw' U' R U' R' U2 Rw
+O09, R U R' U' R' F R2 U R' U' F'
+O10, R U R' U R' F R F' R U2 R'
+O11, Rw' R2 U R' U R U2 R' U M'
+O12, Lw L2 U' L U' L' U2 L U' M'
+O13, F U R U' R2 F' R U R U' R'
+O14, R' F R U R' F' R y' R U' R'
+O15, Rw' U' Rw R' U' R U Rw' U Rw
+O16, Rw U Rw' R U R' U' Rw U' Rw'
+O17, R U R' U R' F R F' U2 R' F R F'
+O18, R U2 R2 F R F' U2 M' U R U' Rw'
+O19, M U R U R' U' M' R' F R F'
+O20, Rw U R' U' M2 U R U' R' U' M'
+O21, R U2 R' U' R U R' U' R U' R'
+O22, R U2 R2 U' R2 U' R2 U2 R
+O23, R2 D' R U2 R' D R U2 R
+O24, R' U' R' D' R U R' D R2
+O25, R U2 R D R' U2 R D' R2
+O26, R' U' R U' R' U2 R
+O27, L U L' U L U2 L'
+O28, Rw U R' U' M U R U' R'
+O29, R U R' U' R U' R' F' U' F R U R'
+O30, F R' F R2 U' R' U' R U R' F2
+O31, R' U' F U R U' R' F' R
+O32, R U2 R' U' F' U F R U' R'
+O33, R U R' U' R' F R F'
+O34, R U R2 U' R' F R U R U' F'
+O35, R U2 R2 F R F' R U2 R'
+O36, L' U' L U' L' U L U L F' L' F
+O37, F R U' R' U' R U R' F'
+O38, R U R' U R U' R' U' R' F R F'
+O39, R U R' F' U' F U R U2 R'
+O40, R' F R U R' U' F' U R
+O41, R U R' U R U2 R' F R U R' U' F'
+O42, R' U' R U' R' U2 R F R U R' U' F'
+O43, R' U' F' U F R
+O44, Fw R U R' U' Fw'
+O45, F R U R' U' F'
+O46, R' U' R' F R F' U R
+O47, F' L' U' L U L' U' L U F
+O48, F R U R' U' R U R' U' F'
+O49, Rw U' Rw2 U Rw2 U Rw2 U' Rw
+O50, Rw' U Rw2 U' Rw2 U' Rw2 U Rw'
+O51, F U R U' R' U R U' R' F'
+O52, R' F' U' F U' R U R' U R
+O53, Rw' U' R U' R' U R U' R' U2 Rw
+O54, Rw U R' U R U' R' U R U2 Rw'
+O55, R' F R U R U' R2 F' R2 U' R' U R U R'
+O56, Rw U Rw' U R U' R' U R U' R' Rw U' Rw'
+O57, R U R' U' M' U R U' Rw'
