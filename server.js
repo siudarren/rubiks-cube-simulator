@@ -51,7 +51,7 @@ app.post('/solve-cube', (req, res) => {
         return res.status(400).json({ error: 'Cube string is required' });
     }
 
-    const pythonProcess = spawn('python', ['/public/solve.py', cubeString]);
+    const pythonProcess = spawn('python', [__dirname + '/public/solve.py', cubeString]);
 
     let output = '';
     let errorOccurred = false;
