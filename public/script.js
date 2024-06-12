@@ -1265,7 +1265,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function solveCube(cubeState) {
         try {
-            const response = await fetch('http://localhost:3000/solve-cube', {
+            const response = await fetch('/solve-cube', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
