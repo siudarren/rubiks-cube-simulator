@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let move = new Array(27).fill(0);
 
     let lastMove = "solveOrScramble";
+
+    let scrambleString = "";
         
     // Function to initiate and control the cube rotation process based on a rotation string.
     function rotate(rotationString){
@@ -919,15 +921,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function generateScramble() {
-        const scramble = await randomScrambleForEvent("333");
-        solvingOrScrambling = true;
-        if (lastMove === "solveOrScramble"){
-            moveHistoryLog.innerHTML += "SCRAMBLE: (";
-        } else {
-            moveHistoryLog.innerHTML += "<br><br>SCRAMBLE: (";
-        }
-        lastMove = "";
-        rotate(processMoves(scramble.toString())) ;
+        scrambleString = await randomScrambleForEvent("333");
     }
 
     function updateMoveLog(move){
@@ -1376,6 +1370,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resetCube();
         setAxes();
         loadCSVData();
+        generateScramble();
         updateButtonText();
 
         async function loadCSVData() {
@@ -1426,6 +1421,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (turning){
             return;
         }
+        solvingOrScrambling = true;
+        if (lastMove === "solveOrScramble"){
+            moveHistoryLog.innerHTML += "SCRAMBLE: (";
+        } else {
+            moveHistoryLog.innerHTML += "<br><br>SCRAMBLE: (";
+        }
+        lastMove = "";
+        rotate(processMoves(scrambleString.toString())) ;
+
         generateScramble();
     });
 
