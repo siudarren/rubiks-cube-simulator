@@ -595,7 +595,7 @@ button:active{
 }
 
 .about-content{
-    max-width: 650px;
+    max-width: 800px;
     margin: 1rem auto;
 }
 
@@ -616,6 +616,10 @@ button:active{
     font-size: 1.5rem;
 }
 
+.about-info{
+    margin-bottom: 10vh;
+}
+
 
 .features li{
     margin: 0.5rem 0rem;
@@ -629,8 +633,13 @@ button:active{
     margin-bottom: 2rem;
 }
 
+.features li a{
+    color: black;
+}
+
 .contact-info{
     margin-top: 1rem;
+    margin-bottom: 15vh;
     font-size: 1rem;
 }
 
@@ -640,13 +649,20 @@ button:active{
     flex-direction: column;
 }
 
+.contact-body .about-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+}
+
 .contact-body .footer{
     margin-top: auto;
 }
 
 
 .footer{
-    margin-top: 4rem;
     height: 80px;
     background-color:rgb(236, 187, 140);
     filter: brightness(80%);

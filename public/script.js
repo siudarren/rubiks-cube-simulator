@@ -1302,7 +1302,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cubeQuaternion = new Quaternion(1, 0, 0, 0);
         let matrix = cubeQuaternion.toMatrix4();
         cube.style.transform = `matrix3d(${matrix.join(',')})`;
-        setUpInitialCubeTilt(Math.PI/4, Math.PI/12);
+        setUpInitialCubeTilt(-Math.PI/4, Math.PI/12);
         moveHistoryLog.innerHTML = "";
         lastMove = "solveOrScramble";
         
@@ -1479,7 +1479,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cubeQuaternion = new Quaternion(1, 0, 0, 0);
         let matrix = cubeQuaternion.toMatrix4();
         cube.style.transform = `matrix3d(${matrix.join(',')})`;
-        setUpInitialCubeTilt(Math.PI/4, Math.PI/12);
+        setUpInitialCubeTilt(-Math.PI/4, Math.PI/12);
     });
 
     basicRotationsButton.addEventListener('click', ()=>{
