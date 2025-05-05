@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize boolean, turning. Will not turn the cube if the turning === true.
     let turning = false;
     // Initialize boolean, isDragging. Will start turning the cube if isDragging.
-    let isDragging = True;
+    let isDragging = False;
     let stop = false;
     let solvingOrScrambling = false;
-    let slideOrDrag = "slide";
+    let slideOrDrag = "drag";
 
     // The x coordinate and y coordinate of the page when you start dragging.
     let startX, startY;
