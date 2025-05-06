@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize boolean, turning. Will not turn the cube if the turning === true.
     let turning = false;
     // Initialize boolean, isDragging. Will start turning the cube if isDragging.
-    let isDragging = False;
+    let isDragging = false;
     let stop = false;
     let solvingOrScrambling = false;
     let slideOrDrag = "drag";

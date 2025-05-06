@@ -2,16 +2,16 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --side-length: 25vw;
     --red: #b71234;
     --orange: #ff5800;
     --yellow: #ffd500;
-    --blue:#0046ad;
+    --blue: #0046ad;
     --green: #009b48;
     --white: #ffffff;
     --black: #000000;
-    --background-white: rgb(247,240,231);
+    --background-white: rgb(247, 240, 231);
     --button-gap: 5px;
 }
 html {
@@ -31,20 +31,20 @@ body {
     overflow: auto;
 }
 
-.everything-other-than-footer{
+.everything-other-than-footer {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.nav-bar{
+.nav-bar {
     height: 50px;
     background-color: rgb(236, 187, 140);
     margin-bottom: 2vh;
     display: flex;
 }
 
-.nav-bar ul{
+.nav-bar ul {
     align-items: center;
     display: flex;
     flex: row wrap;
@@ -52,23 +52,23 @@ body {
     padding: 0rem 2rem;
     gap: 1rem;
 }
-.nav-bar ul li{
+.nav-bar ul li {
     margin-top: 0.5rem;
     text-align: center;
 }
 
-.nav-bar ul li:first-child{
+.nav-bar ul li:first-child {
     margin: 0.5rem auto 0px 0px;
 }
 
-.nav-bar a{
+.nav-bar a {
     border: none;
     font-size: 20px;
     text-decoration: none;
     color: black;
 }
 
-.nav-bar li:first-child a{
+.nav-bar li:first-child a {
     font-size: 25px;
 }
 
@@ -78,7 +78,7 @@ body {
     flex: 1;
 }
 
-button{
+button {
     width: 100%;
     height: 1.8rem;
     background-color: transparent;
@@ -92,7 +92,7 @@ button{
     padding: 0.2rem;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ h2 {
     font-size: 1.2rem;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0px 3px;
     margin: 0px 0px 0.4rem 0px;
@@ -113,23 +113,23 @@ ul{
     margin: 0px 10px;
 }
 
-.Permutations ul{
+.Permutations ul {
     display: grid;
     grid-template-columns: 2.1fr 1fr 1fr;
     column-gap: var(--button-gap);
 }
 
-.Permutations ul button{
+.Permutations ul button {
     background-color: yellowgreen;
     border: none;
     font-weight: bold;
 }
 
-.basic-rotations-button{
+.basic-rotations-button {
     filter: brightness(70%);
 }
 
-.basic-rotations ul{
+.basic-rotations ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--button-gap);
@@ -139,61 +139,60 @@ ul{
     grid-template-columns: repeat(6, 1fr);
 }
 
-.basic-rotations button{
+.basic-rotations button {
     background-color: var(--yellow);
     border: none;
     font-weight: bold;
 }
 
-.basic-rotations ul button:hover{
+.basic-rotations ul button:hover {
     filter: brightness(70%);
     cursor: pointer;
 }
 
-.oll-rotations ul{
+.oll-rotations ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: var(--button-gap);
 }
 
-.oll-rotations button{
+.oll-rotations button {
     background-color: var(--yellow);
     border: none;
     font-weight: bold;
 }
 
-.oll-rotations ul button:hover{
+.oll-rotations ul button:hover {
     filter: brightness(70%);
     cursor: pointer;
 }
 
-.oll-rotations{
+.oll-rotations {
     display: none;
 }
 
-.pll-rotations ul{
+.pll-rotations ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--button-gap);
-
 }
 
-.pll-rotations button{
+.pll-rotations button {
     background-color: var(--yellow);
     border: none;
     font-weight: bold;
 }
 
-.pll-rotations ul button:hover{
+.pll-rotations ul button:hover {
     filter: brightness(70%);
     cursor: pointer;
 }
 
-.pll-rotations{
+.pll-rotations {
     display: none;
 }
 
-.rotation-buttons li{
+.rotation-buttons li {
     display: flex;
     justify-content: center;
 }
@@ -210,22 +209,21 @@ ul{
     border-radius: 3px;
 }
 
-.setting{
+.setting {
     /* border: 1px solid red; */
     margin: 0 0.5rem 0 0.5rem;
     padding-top: 0px;
     height: 98%;
     display: flex;
     flex-direction: column;
-
 }
 
-.main-buttons{
+.main-buttons {
     margin: 0px 0px 0px 0px;
     padding: 0px;
 }
 
-.main-buttons ul{
+.main-buttons ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: start;
@@ -233,7 +231,7 @@ ul{
     column-gap: var(--button-gap);
 }
 
-.main-buttons button{
+.main-buttons button {
     background-color: orange;
     font-weight: bold;
     border: none;
@@ -241,30 +239,30 @@ ul{
 }
 
 /* The div that controls the rotating speed of the cube */
-.rotation-speed{
+.rotation-speed {
     display: block;
     margin: 1rem 0px;
 }
 
-.rotation-speed ul{
+.rotation-speed ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--button-gap);
 }
 
-.rotation-speed button{
+.rotation-speed button {
     background-color: yellowgreen;
     border: none;
     font-weight: bold;
 }
 
-.rotation-speed .normal-button{
+.rotation-speed .normal-button {
     filter: brightness(70%);
 }
 
-
-
-.x-axis, .y-axis, .z-axis {
+.x-axis,
+.y-axis,
+.z-axis {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -273,7 +271,7 @@ ul{
     margin: 0.6rem auto;
 }
 
-input[type="range"]{
+input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
@@ -291,7 +289,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 /******** Firefox ********/
 input[type="range"]::-moz-range-track {
     background: gray;
-    height: 0.2rem;        
+    height: 0.2rem;
 }
 
 /***** Thumb Styles *****/
@@ -302,7 +300,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: -0.15rem; /* Centers thumb on the track */
     background-color: #5cd5eb;
     height: 0.5rem;
-    width: 0.5rem;    
+    width: 0.5rem;
     border-radius: 50%;
 }
 
@@ -316,7 +314,9 @@ input[type="range"]::-moz-range-thumb {
     width: 0.5rem;
 }
 
-.x-axis p, .y-axis p, .z-axis p{
+.x-axis p,
+.y-axis p,
+.z-axis p {
     display: flex;
     align-items: center;
     margin: 0px;
@@ -326,39 +326,38 @@ input[type="range"]::-moz-range-thumb {
     display: none;
 }
 
-.setting-title{
+.setting-title {
     display: block;
     margin: 0.4rem 0px;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-button:active{
+button:active {
     filter: brightness(50%);
 }
 
-
-.rotation-method ul{
+.rotation-method ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--button-gap);
 }
 
-.rotation-method button{
+.rotation-method button {
     background-color: yellowgreen;
     font-weight: bold;
     border: none;
 }
 
-.rotation-method .slide-button{
+.rotation-method .drag-button {
     filter: brightness(70%);
 }
 
-.rotation-method .rotation-reset-button{
+.rotation-method .rotation-reset-button {
     background-color: orange;
 }
 
-.move-history{
+.move-history {
     margin: 0;
     flex: 1;
     display: flex;
@@ -367,7 +366,7 @@ button:active{
     overflow: hidden; /* Hide any overflow outside of this container */
 }
 
-.move-history-log{
+.move-history-log {
     flex: 1; /* Allow it to take remaining space */
     max-height: 100%; /* Ensure it doesn't exceed the parent's height */
     overflow: auto; /* Scroll when content exceeds available space */
@@ -379,23 +378,6 @@ button:active{
     text-align: start;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cube {
     width: var(--side-length);
     height: var(--side-length);
@@ -406,128 +388,180 @@ button:active{
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.block{
+.block {
     transform-style: preserve-3d;
     position: relative;
-    height: calc(var(--side-length)/3);
-    width: calc(var(--side-length)/3);
+    height: calc(var(--side-length) / 3);
+    width: calc(var(--side-length) / 3);
 }
 
 .side {
-    height: calc(var(--side-length)/3);
-    width: calc(var(--side-length)/3);
+    height: calc(var(--side-length) / 3);
+    width: calc(var(--side-length) / 3);
     border: 0.2rem solid black;
     border-radius: 0.5rem;
     position: absolute;
 }
 
-
 /* Level 1 position in grid */
-.level-1.position-1, .level-1.position-4, .level-1.position-7 {
+.level-1.position-1,
+.level-1.position-4,
+.level-1.position-7 {
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
-.level-1.position-2, .level-1.position-5, .level-1.position-8 {
+.level-1.position-2,
+.level-1.position-5,
+.level-1.position-8 {
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
-.level-1.position-3, .level-1.position-6, .level-1.position-9 {
+.level-1.position-3,
+.level-1.position-6,
+.level-1.position-9 {
     grid-column: 3/4;
     grid-row: 3/4;
 }
 /* Level 2 Position in grid */
-.level-2.position-1, .level-2.position-4, .level-2.position-7 {
+.level-2.position-1,
+.level-2.position-4,
+.level-2.position-7 {
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-.level-2.position-2, .level-2.position-5, .level-2.position-8 {
+.level-2.position-2,
+.level-2.position-5,
+.level-2.position-8 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.level-2.position-3, .level-2.position-6, .level-2.position-9 {
+.level-2.position-3,
+.level-2.position-6,
+.level-2.position-9 {
     grid-column: 3/4;
     grid-row: 2/3;
 }
 
 /* Level 3 Position in grid */
-.level-3.position-1, .level-3.position-4, .level-3.position-7 {
+.level-3.position-1,
+.level-3.position-4,
+.level-3.position-7 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.level-3.position-2, .level-3.position-5, .level-3.position-8 {
+.level-3.position-2,
+.level-3.position-5,
+.level-3.position-8 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.level-3.position-3, .level-3.position-6, .level-3.position-9 {
+.level-3.position-3,
+.level-3.position-6,
+.level-3.position-9 {
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
 /* Level 1, first row */
-.position-1 .front, .position-2 .front, .position-3 .front{
-    transform: translateZ(calc(var(--side-length)/3)) translateZ(calc(var(--side-length)/6));
+.position-1 .front,
+.position-2 .front,
+.position-3 .front {
+    transform: translateZ(calc(var(--side-length) / 3)) translateZ(calc(var(--side-length) / 6));
 }
-.position-1 .down, .position-2 .down, .position-3 .down{
-    transform: translateZ(calc(var(--side-length)/3)) rotateX(-90deg) translateZ(calc(var(--side-length)/6));
+.position-1 .down,
+.position-2 .down,
+.position-3 .down {
+    transform: translateZ(calc(var(--side-length) / 3)) rotateX(-90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-1 .up, .position-2 .up, .position-3 .up{
-    transform: translateZ(calc(var(--side-length)/3)) rotateX(90deg) translateZ(calc(var(--side-length)/6));
+.position-1 .up,
+.position-2 .up,
+.position-3 .up {
+    transform: translateZ(calc(var(--side-length) / 3)) rotateX(90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-1 .left, .position-2 .left, .position-3 .left{
-    transform: translateZ(calc(var(--side-length)/3)) rotateY(-90deg) translateZ(calc(var(--side-length)/6));
+.position-1 .left,
+.position-2 .left,
+.position-3 .left {
+    transform: translateZ(calc(var(--side-length) / 3)) rotateY(-90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-1 .right, .position-2 .right, .position-3 .right{
-    transform: translateZ(calc(var(--side-length)/3)) rotateY(90deg) translateZ(calc(var(--side-length)/6));
+.position-1 .right,
+.position-2 .right,
+.position-3 .right {
+    transform: translateZ(calc(var(--side-length) / 3)) rotateY(90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-1 .back, .position-2 .back, .position-3 .back{
-    transform: translateZ(calc(var(--side-length)/3)) rotateX(180deg) translateZ(calc(var(--side-length)/6)); 
+.position-1 .back,
+.position-2 .back,
+.position-3 .back {
+    transform: translateZ(calc(var(--side-length) / 3)) rotateX(180deg) translateZ(calc(var(--side-length) / 6));
 }
 
 /* Level 1, second row */
-.position-4 .front, .position-5 .front, .position-6 .front{
-    transform: translateZ(calc(var(--side-length)/6));
+.position-4 .front,
+.position-5 .front,
+.position-6 .front {
+    transform: translateZ(calc(var(--side-length) / 6));
 }
-.position-4 .down, .position-5 .down, .position-6 .down{
-    transform: rotateX(-90deg) translateZ(calc(var(--side-length)/6));
+.position-4 .down,
+.position-5 .down,
+.position-6 .down {
+    transform: rotateX(-90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-4 .up, .position-5 .up, .position-6 .up{
-    transform: rotateX(90deg) translateZ(calc(var(--side-length)/6));
+.position-4 .up,
+.position-5 .up,
+.position-6 .up {
+    transform: rotateX(90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-4 .left, .position-5 .left, .position-6 .left{
-    transform: rotateY(-90deg) translateZ(calc(var(--side-length)/6));
+.position-4 .left,
+.position-5 .left,
+.position-6 .left {
+    transform: rotateY(-90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-4 .right, .position-5 .right, .position-6 .right{
-    transform: rotateY(90deg) translateZ(calc(var(--side-length)/6));
+.position-4 .right,
+.position-5 .right,
+.position-6 .right {
+    transform: rotateY(90deg) translateZ(calc(var(--side-length) / 6));
 }
-.position-4 .back, .position-5 .back, .position-6 .back{
-    transform: rotateX(180deg) translateZ(calc(var(--side-length)/6)); 
-}
-
-.position-7 .front, .position-8 .front, .position-9 .front{
-    transform: translateZ(calc(-1*var(--side-length)/3)) translateZ(calc(var(--side-length)/6));
-}
-.position-7 .down, .position-8 .down, .position-9 .down{
-    transform: translateZ(calc(-1*var(--side-length)/3)) rotateX(-90deg) translateZ(calc(var(--side-length)/6));
-}
-.position-7 .up, .position-8 .up, .position-9 .up{
-    transform: translateZ(calc(-1*var(--side-length)/3)) rotateX(90deg) translateZ(calc(var(--side-length)/6));
-}
-.position-7 .left, .position-8 .left, .position-9 .left{
-    transform: translateZ(calc(-1*var(--side-length)/3)) rotateY(-90deg) translateZ(calc(var(--side-length)/6));
-}
-.position-7 .right, .position-8 .right, .position-9 .right{
-    transform: translateZ(calc(-1*var(--side-length)/3)) rotateY(90deg) translateZ(calc(var(--side-length)/6));
-}
-.position-7 .back, .position-8 .back, .position-9 .back{
-    transform: translateZ(calc(-1*var(--side-length)/3)) rotateX(180deg) translateZ(calc(var(--side-length)/6)); 
+.position-4 .back,
+.position-5 .back,
+.position-6 .back {
+    transform: rotateX(180deg) translateZ(calc(var(--side-length) / 6));
 }
 
+.position-7 .front,
+.position-8 .front,
+.position-9 .front {
+    transform: translateZ(calc(-1 * var(--side-length) / 3)) translateZ(calc(var(--side-length) / 6));
+}
+.position-7 .down,
+.position-8 .down,
+.position-9 .down {
+    transform: translateZ(calc(-1 * var(--side-length) / 3)) rotateX(-90deg) translateZ(calc(var(--side-length) / 6));
+}
+.position-7 .up,
+.position-8 .up,
+.position-9 .up {
+    transform: translateZ(calc(-1 * var(--side-length) / 3)) rotateX(90deg) translateZ(calc(var(--side-length) / 6));
+}
+.position-7 .left,
+.position-8 .left,
+.position-9 .left {
+    transform: translateZ(calc(-1 * var(--side-length) / 3)) rotateY(-90deg) translateZ(calc(var(--side-length) / 6));
+}
+.position-7 .right,
+.position-8 .right,
+.position-9 .right {
+    transform: translateZ(calc(-1 * var(--side-length) / 3)) rotateY(90deg) translateZ(calc(var(--side-length) / 6));
+}
+.position-7 .back,
+.position-8 .back,
+.position-9 .back {
+    transform: translateZ(calc(-1 * var(--side-length) / 3)) rotateX(180deg) translateZ(calc(var(--side-length) / 6));
+}
 
 .white {
     background-color: var(--white);
@@ -539,117 +573,112 @@ button:active{
     background-color: var(--green);
 }
 
-.red{
+.red {
     background-color: var(--red);
 }
 
-.orange{
+.orange {
     background-color: var(--orange);
 }
 
-.blue{
+.blue {
     background-color: var(--blue);
 }
 
-/* Inside colors [black] */ 
-.black{
+/* Inside colors [black] */
+.black {
     background-color: var(--black);
 }
 
-
-@media (max-width: 1500px){
-    html{
+@media (max-width: 1500px) {
+    html {
         font-size: 1.2vw;
     }
-
-
 }
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .Permutations ul {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    html{
+    html {
         font-size: 1.5vw;
     }
 
-    .basic-rotations .whole-cube-rotations{
+    .basic-rotations .whole-cube-rotations {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-auto-flow: column;
     }
-    .oll-rotations ul{
+    .oll-rotations ul {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
 }
-@media (max-width: 600px){
-    html{
+@media (max-width: 600px) {
+    html {
         font-size: 2vw;
     }
     .basic-rotations ul {
         grid-template-columns: 1fr 1fr;
     }
-    .oll-rotations ul{
+    .oll-rotations ul {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-.about-content{
+.about-content {
     max-width: 800px;
     margin: 1rem auto;
 }
 
-.about-content h2{
+.about-content h2 {
     font-size: 2rem;
     margin-top: 2rem;
 }
 
-.about-content .about-info{
+.about-content .about-info {
     font-size: 1rem;
     text-align: start;
     margin-top: 1rem;
 }
 
-.about-info h3{
+.about-info h3 {
     margin: 0;
     margin-top: 1rem;
     font-size: 1.5rem;
 }
 
-.about-info{
+.about-info {
     margin-bottom: 10vh;
 }
 
-
-.features li{
+.features li {
     margin: 0.5rem 0rem;
 }
 
-.features li span{
+.features li span {
     font-weight: bold;
 }
 
-.about-content{
+.about-content {
     margin-bottom: 2rem;
 }
 
-.features li a{
+.features li a {
     color: black;
 }
 
-.contact-info{
+.contact-info {
     margin-top: 1rem;
     margin-bottom: 15vh;
     font-size: 1rem;
 }
 
-.contact-body{
+.contact-body {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.contact-body .about-content{
+.contact-body .about-content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -657,14 +686,13 @@ button:active{
     padding: 0px;
 }
 
-.contact-body .footer{
+.contact-body .footer {
     margin-top: auto;
 }
 
-
-.footer{
+.footer {
     height: 80px;
-    background-color:rgb(236, 187, 140);
+    background-color: rgb(236, 187, 140);
     filter: brightness(80%);
     display: flex;
     justify-content: center;
